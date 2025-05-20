@@ -8,9 +8,8 @@ A minimal, fast, and reliable  [tilde expansion](https://www.gnu.org/software/ba
 use simple_expand_tilde::*;
 
 fn main() {
+    // Unix     =>  /home/jdoe/.rustup
     // Windows  =>  C:\Users\jdoe\.rustup
-    // Linux    =>  /home/jdoe/.rustup
-    // Mac      =>  /Users/jdoe/.rustup
     let path = expand_tilde("~/.rustup").unwrap();
 }
 ```
